@@ -1,3 +1,29 @@
+^!Up::
+{
+	WinGetPos,Xpos,Ypos,,,A
+	;MsgBox %Xpos% %Ypos%
+	WinMove,A,,(Xpos),(Ypos - 50)
+	return
+}
+^!Down::
+{
+	WinGetPos,Xpos,Ypos,,,A
+	WinMove,A,,(Xpos),(Ypos + 50)
+	return
+}
+^!Left::
+{
+	WinGetPos,Xpos,Ypos,,,A
+	WinMove,A,,(Xpos-100),(Ypos)
+	return
+}
+^!Right::
+{
+	WinGetPos,Xpos,Ypos,,,A
+	WinMove,A,,(Xpos+100),(Ypos)
+	return
+}
+
 #1::
 IfWinExist Case-Dev5
 	WinActivate
