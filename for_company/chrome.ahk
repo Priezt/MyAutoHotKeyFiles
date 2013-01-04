@@ -1,8 +1,6 @@
 #IfWinActive ahk_class Chrome_WidgetWin_1
 ^p::Send ^+{Tab}
 ^n::Send ^{Tab}
-^!f::Send {PgDn}
-^!b::Send {PgUp}
 #IfWinActive
 
 /*
